@@ -417,10 +417,12 @@
 
                 <!-- Simulator Live Visual Board Display -->
                 <div class="lg:col-span-7 flex flex-col items-center justify-center">
-                    <div class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-widest"><i class="fa-solid fa-eye mr-1"></i> Live Preview Papan Bunga (Standar 2m x 1.25m)</div>
+                    <div class="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-widest"><i class="fa-solid fa-eye mr-1"></i> Live Preview Papan Bunga (Standar 200 x 150 cm)</div>
                     
                     <!-- Board Outer Frame -->
-                    <div id="boardContainer" class="w-full max-w-xl aspect-[16/10] rounded-2xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-2xl transition-all duration-500 relative border-8 border-amber-800 bg-gradient-to-b from-blue-950 to-slate-900 text-amber-200">
+                    <div id="boardContainer" class="w-full max-w-xl aspect-[16/10] rounded-2xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-2xl transition-all duration-500 relative border-8 border-amber-800 bg-gradient-to-b from-blue-950 to-slate-900 text-amber-200">                      
+                        
+                        
                         
                         <!-- Top Flowers Ribbon Decoration -->
                         <div class="w-full flex justify-between items-center px-4 py-2 border-b border-amber-400/30">
@@ -682,29 +684,96 @@
             <div>
                 <h3 class="font-serif text-xl font-bold text-brand-dark mb-4 text-center">Galeri Hasil Foto di Lokasi Acara Nyata</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div onclick="openImageModal(this.src)" class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
-                        <img src="https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D" alt="Galeri Real 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                            <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                    
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784687864402-ab271da3a792?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784687864402-ab271da3a792?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
                         </div>
                     </div>
-                    <div onclick="openImageModal(this.src)" class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
-                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="Galeri Real 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                            <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784729815618-970e00e4b64d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784729815618-970e00e4b64d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
                         </div>
                     </div>
-                    <div onclick="openImageModal(this.src)" class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
-                        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=80" alt="Galeri Real 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                            <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784729800825-b6fdd78bb919?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784729800825-b6fdd78bb919?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
                         </div>
                     </div>
-                    <div onclick="openImageModal(this.src)" class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
-                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=600&q=80" alt="Galeri Real 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                            <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784688453624-febf7f93411b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784688453624-febf7f93411b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
                         </div>
+                    </div>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784687864401-fe35e840c029?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784687864401-fe35e840c029?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784688549830-5def7bdc636c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784688549830-5def7bdc636c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784688609139-4ed519846827?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784688609139-4ed519846827?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <div onclick="openImageModal(this.dataset.image)"
+                         data-image="https://images.unsplash.com/photo-1784688113230-78e601256b05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D"
+                         class="rounded-xl overflow-hidden h-48 cursor-pointer group relative">
+                        <img src="https://images.unsplash.com/photo-1784688113230-78e601256b05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D"
+                             class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -970,70 +1039,103 @@
         const productsData = [
             {
                 id: 1,
-                title: "Papan Bunga Wedding Royal Classic",
+                title: "💍Asemdoyong - Papan Bunga Wedding",
                 category: "papan",
                 occasion: "wedding",
-                price: "Rp 550.000",
-                rating: 4.9,
+                price: "Rp 750.000",
+                rating: 5.0,
                 sold: 340,
-                image: "https://images.unsplash.com/photo-1784687864401-fe35e840c029?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D",
-                description: "Ukuran standar 2m x 1.25m dengan paduan bunga krisan & mawar pastel elegan."
+                image: "https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran standar 200 × 150 cm --."
             },
             {
                 id: 2,
-                title: "Papan Duka Cita Honor Premium",
+                title: "🎉Jebed - Papan Bunga Selamat & Sukses",
                 category: "papan",
-                occasion: "condolence",
-                price: "Rp 500.000",
+                occasion: "selamat & sukses",
+                price: "Rp 1.500.000",
                 rating: 5.0,
                 sold: 520,
-                image: "https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D",
-                description: "Nuansa biru putih formal, pengerjaan prioritas express rumah duka."
+                image: "https://images.unsplash.com/photo-1784688453624-febf7f93411b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran standar 200 × 150 cm --."
             },
             {
                 id: 3,
-                title: "Standing Flower Grand Opening Deluxe",
-                category: "standing",
-                occasion: "opening",
-                price: "Rp 750.000",
+                title: "💍Kejambon - Papan Bunga Wedding",
+                category: "papan",
+                occasion: "wedding",
+                price: "Rp 600.000",
                 rating: 4.9,
-                sold: 190,
-                image: "https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D",
-                description: "Standing tripod kayu/besi mewah dengan rangkaian bunga mawar & lilies segar."
+                sold: 645,
+                image: "https://images.unsplash.com/photo-1784687864401-fe35e840c029?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran standar 200 × 150 cm --."
             },
             {
                 id: 4,
-                title: "Buket Bunga Rose Velvet Romance",
-                category: "buket",
-                occasion: "bouquet",
-                price: "Rp 320.000",
-                rating: 4.8,
-                sold: 410,
-                image: "https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D",
-                description: "20 tangkai Mawar Merah Import dibungkus Korean wrapping paper premium."
+                title: "🌹Penggarit - Standing Flower Turut Berduka Cita",
+                category: "standing",
+                occasion: "turut berduka cita",
+                price: "Rp 1.250.000",
+                rating: 4.9,
+                sold: 190,
+                image: "https://images.unsplash.com/photo-1784729800825-b6fdd78bb919?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D",
+                description: "Standing tripod kayu/besi mewah dengan rangkaian bunga mawar & lilies segar."
             },
             {
                 id: 5,
-                title: "Papan Bunga Selamat & Sukses Jumbo 2-Gandeng",
+                title: "🎉Banjardawa - Papan Bunga Selamat & Sukses",
                 category: "papan",
-                occasion: "opening",
-                price: "Rp 1.100.000",
-                rating: 5.0,
-                sold: 88,
-                image: "https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D",
-                description: "Ukuran ekstra luas 4m x 1.25m khusus ucapan korporat direksi & kementerian."
+                occasion: "selamat & sukses",
+                price: "Rp 1.500.000",
+                rating: 4.9,
+                sold: 420,
+                image: "https://images.unsplash.com/photo-1784729815618-970e00e4b64d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran standar 200 × 150 cm --."
             },
             {
                 id: 6,
-                title: "Standing Flower Condolence Pure White",
-                category: "standing",
-                occasion: "condolence",
-                price: "Rp 650.000",
+                title: "🤍Semingkir - Papan Bunga Jumbo Turut Berduka Cita",
+                category: "papan",
+                occasion: "turut berduka cita",
+                price: "Rp 1.500.000",
+                rating: 5.0,
+                sold: 215,
+                image: "https://images.unsplash.com/photo-1784687864402-ab271da3a792?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran ekstra luas 400 × 120 cm --."
+            },
+            {
+                id: 7,
+                title: "🎉Pegiringan - Papan Bunga Selamat & Sukses",
+                category: "papan",
+                occasion: "selamat & sukses",
+                price: "Rp 550.000",
                 rating: 4.9,
-                sold: 115,
-                image: "https://images.unsplash.com/photo-1784628932421-7d3e7b4a62b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D",
-                description: "Rangkaian mawar putih, aster, dan daun eucalyptus elegan untuk ruangan duka."
-            }
+                sold: 420,
+                image: "https://images.unsplash.com/photo-1784688549830-5def7bdc636c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran standar 200 × 120 cm --."
+            },
+            {
+                id: 8,
+                title: "🤍Bantarbolang - Papan Bunga Jumbo Wedding",
+                category: "papan",
+                occasion: "wedding",
+                price: "Rp 1.700.000",
+                rating: 5.0,
+                sold: 215,
+                image: "https://images.unsplash.com/photo-1784688609139-4ed519846827?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8fA%3D%3D",
+                description: "Ukuran ekstra luas 400 × 150 cm --."
+            },
+            {
+                id: 9,
+                title: "🌹Pulosari - Standing Flower Turut Berduka Cita",
+                category: "standing",
+                occasion: "turut berduka cita",
+                price: "Rp 800.000",
+                rating: 4.9,
+                sold: 310,
+                image: "https://images.unsplash.com/photo-1784688113230-78e601256b05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D",
+                description: "Standing tripod kayu/besi mewah dengan rangkaian bunga mawar & lilies segar."
+            },
         ];
 
         let activeCategoryFilter = 'all';
